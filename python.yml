@@ -1,0 +1,14 @@
+name: Simple DevOps CI
+
+on: [push]
+
+jobs:
+  run-python:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run Python App
+      run: python app.py
