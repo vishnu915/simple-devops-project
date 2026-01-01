@@ -15,5 +15,10 @@ jobs:
       with:
         python-version: '3.10'
 
+    - name: Verify Python
+      run: |
+        python --version
+        dir
+
     - name: Run Python App
-      run: python app.py
+      run: python -u app.py
